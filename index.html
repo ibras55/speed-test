@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speed Test</h1>
+        <button id="startTest">Start Speed Test</button>
+        <a href="history.html" class="btn">View History</a>
+        <a href="graph.html" class="btn">View Graphs</a>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p style="color: brown;">Testing your network speed. Please wait...</p>
+        </div>
+        <div id="results">
+            <p><strong>Download Speed:</strong> <span id="downloadSpeed">0 Mbps</span></p>
+            <p><strong>Upload Speed:</strong> <span id="uploadSpeed">0 Mbps</span></p>
+            <p><strong>Network Status:</strong> <span id="networkStatus">Checking...</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
